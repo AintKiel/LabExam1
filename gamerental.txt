@@ -46,7 +46,7 @@ def register():
                     if len(password) < 8:
                         print("Password is not at least 8 characters")
                         continue
-                    if len(password) > 8:
+                    if len(password) >= 8:
                         user_account[username] = {"password" : password, "balance" : balance, "points" : points}  
                         print("Sign Up successful!")
                         main()
